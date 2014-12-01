@@ -1,0 +1,34 @@
+<form id="pridat_produkt" action="" method="post" enctype="multipart/form-data">
+   <table class="na_stred">
+    <tr><td>Název produktu: </td><td> <input type="text" name="nazev_produktu" value="{{produkt.nazev}}"></td></tr>
+    
+    <tr><td>Obrazek: </td><td> <input type="file" name="soubor"> </td></tr>
+    
+    <tr><td>Cena: </td><td>  <input type="text" name="cena" value="{{produkt.cena}}">Kč</td></tr>
+    
+    <tr><td>Popis: </td><td> <textarea name="popis" rows="20" cols="65">{{produkt.popis}}</textarea> </td></tr>
+   
+<!-- řádek se značkou   -->
+    
+    <tr><td>Vyber značku: </td><td>  
+            
+            <input type="radio" name="znacka_radio" value="znacka_selectu" id="znacka_selectu" checked="checked">
+               
+               <select name="znacka" style="width:200px;"> 
+                   <option value="nic"> ------------------------------ </option>
+                    {% for znacka in znacky %}
+                        <option value="{{ znacka.id|e }}">{{ znacka.nazev_znacky|e }}</option>
+                    {% endfor %}
+               </select>
+            <label for="znacka_input">Nebo přidat do nové: </label>
+                <input type="radio" name="znacka_radio" value="znacka_inputu" id="znacka_input">
+                <input type="text" name="pridat_znacku">  
+           
+        </td>
+    </tr>
+    
+    <tr><td></td><td> <input type="submit" value=" Odeslat "> <input type="reset" value=" Smazat ">
+             
+         </td></tr>
+   </table>
+</form>

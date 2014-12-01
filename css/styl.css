@@ -1,0 +1,129 @@
+/* 
+    Document   : styl
+    Created on : 23.4.2012, 9:36:20
+    Author     : K8
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* -----TABULKY------- */
+
+.tabulka_vypis_produktu{
+    border-style:solid;
+    border-collapse: collapse;
+    border-color:purple;
+}
+
+.tabulka_sprava_uzivatelu{
+    border-collapse: collapse;
+    width:850px;
+    margin:auto;
+    border:1px solid;
+    text-align: center;
+}
+
+.tabulka_sprava_uzivatelu th{
+    background-color: #CC6699;
+    border-color: purple;
+}
+
+.tabulka_reference{
+    border-top: 1px solid;
+    width:99%;    
+}
+
+.vypis_detailu_produktu{
+    width:85%;
+    margin: auto;
+    margin-top:20px;
+
+}
+.vypis_detailu_produktu th{
+    border:2px solid;
+    border-radius:7px;
+    border-color: #CC6699;
+    text-align: center;
+}
+
+.sprava_fotogalerie{
+    margin:auto;
+    border:1px solid;
+    text-align: center;
+    width:90%;
+    border-collapse: collapse;
+    border:box;
+}
+
+.sprava_fotogalerie th{
+    border:2px solid;
+    background-color: #CC6699;
+    border-color: purple;   
+}
+
+.prihlaseni{
+    display: block;
+    margin-top: 20px;
+}
+
+/* články */
+.tabulka_clanky{
+    border:1px solid;
+    margin:auto;
+    width:90%;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.tabulka_clanky th{
+    background-color: #CC6699;
+    border-color: purple;
+}
+
+
+/* Pro více objektů*/
+h1{
+    text-align: center;
+}
+
+.na_stred{
+    margin:auto;
+}
+
+.kod{
+    background-color:#FFCC66;
+    border:1px solid;
+}
+
+.velikost_inputu{
+    width:135px;
+}
+
+#obsah{
+    text-align: justify;
+    font-family: times new roman;
+}
+/* -----Informační divi ------ */
+#chyba{
+    margin:auto;
+    border:2px solid;
+    border-radius:7px;
+    border-color:red;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width:95%;
+    background-color: #fb97a7;
+    
+}
+
+#spravne{
+    margin:auto;
+    border:2px solid;
+    border-radius:7px;
+    border-color:green;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width:95%;
+    background-color:#a7fc99;
+}
+

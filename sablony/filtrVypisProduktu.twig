@@ -1,0 +1,29 @@
+<div style="width:915px" >
+    <fieldset style="border-color: purple;">
+        <legend>FILTR</legend>
+
+        <form action="index.php?stranka=vypisProduktu" method="post">
+            <table style="width:100%;">
+                <tr> 
+                <td> Značka: </td><td> <select name="vyber_znacku" onchange="this.form.submit();" style="width:100%;">
+                        <option value="id_znacky"> -------------------------------- </option>
+
+                            {% for znacka in znacky %}
+                                <option value="{{ znacka.id|e }}">{{ znacka.nazev_znacky|e }}</option>
+                            {% endfor %}
+
+                        </select>
+                    </td>
+                    <td> Seředit podle:</td><td> <select name="seradit" onchange="this.form.submit();" style="width:100%;">
+                        <option value="0"> -------------------------------- </option>
+                        <option value="nazev">názvu</option>
+                        <option value="cena">ceny</option>
+                        </select>
+                    </td>
+                    <td><noscript><input type="submit" value="FILTROVAT" /></noscript></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>  
+</div>
+<br />
